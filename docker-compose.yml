@@ -1,0 +1,8 @@
+version: "3"
+services: 
+  arbitrage:                    
+    image: arb-test        
+    container_name: arbitrage
+    volumes:
+      - ./cmd/config.yaml:/src/config.yaml
+    restart: always

@@ -1,0 +1,12 @@
+interval: 10
+prometheus_api: ${PROMETHEUS_API}/api/v1
+webhooks:
+  line_notify_token: "${TOKEN}"
+pairs:
+  - token:
+      input: "JUNO"
+      output: "bJUNO"
+    strategy: "JUNO-bJUNO"
+    expected_profit_forward: 20.00
+    expected_profit_backward: 15.00
+    expected_profit_step: 0.50
